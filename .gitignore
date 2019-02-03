@@ -1,0 +1,8 @@
+# JetBrains IDE (such as PhpStorm)
+.idea
+
+# Visual Studio code
+.vscode
+
+# Visual Studio
+.vs

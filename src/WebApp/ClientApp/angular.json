@@ -78,7 +78,7 @@
               "**/app.module.ts"
             ],
             "styles": [
-              "styles.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "assets": [

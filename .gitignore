@@ -1,4 +1,4 @@
-# JetBrains IDE (such as PhpStorm)
+﻿# JetBrains IDE (such as PhpStorm)
 .idea
 
 # Visual Studio code
@@ -6,3 +6,9 @@
 
 # Visual Studio
 .vs
+
+# NPM packages
+node_modules
+
+# Local development settings
+appsettings.Development.json

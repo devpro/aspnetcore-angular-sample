@@ -1,5 +1,0 @@
-# NPM packages
-/node_modules
-
-# Local development settings
-/appsettings.Development.json

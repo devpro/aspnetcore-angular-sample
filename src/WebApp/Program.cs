@@ -1,19 +1,44 @@
-using Microsoft.AspNetCore;
+﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 namespace Devpro.AspNetCoreAngularSample.WebApp
 {
     public static class Program
     {
+        /// <summary>
+        /// Entry point.
+        /// </summary>
+        /// <param name="args"></param>
+        [ExcludeFromCodeCoverage]
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        /// <summary>
+        /// Create web host builder.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public static IHostBuilder CreateHostBuilder(string[] args)
         {
-            return WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            return Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    ConfigureWebHost(webBuilder);
+                });
+        }
+
+        /// <summary>
+        /// Configure web host.
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <returns></returns>
+        public static IWebHostBuilder ConfigureWebHost(IWebHostBuilder builder)
+        {
+            builder.UseStartup<Startup>();
+            return builder;
         }
     }
 }

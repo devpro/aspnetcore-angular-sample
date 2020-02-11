@@ -10,7 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE00220F-2BEC-463B-9DEE-60F0979034B8}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		.azure\pipelines\ci.yml = .azure\pipelines\ci.yml
 		CodeCoverage.runsettings = CodeCoverage.runsettings
+		.azure\pipelines\pkg.yml = .azure\pipelines\pkg.yml
 		README.md = README.md
 	EndProjectSection
 EndProject

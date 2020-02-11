@@ -1,6 +1,8 @@
-# aspnetcore-angular-sample
+﻿# aspnetcore-angular-sample
 
-[![Build Status](https://dev.azure.com/devprofr/demo/_apis/build/status/demo-angular-aspnetcore-CI?branchName=master)](https://dev.azure.com/devprofr/demo/_build/latest?definitionId=9&branchName=master)
+[![Build Status](https://dev.azure.com/devprofr/demo/_apis/build/status/demo-angular-aspnetcore-ci?branchName=master)](https://dev.azure.com/devprofr/demo/_build/latest?definitionId=9&branchName=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devpro.demo.angular-aspnetcore&metric=alert_status)](https://sonarcloud.io/dashboard?id=devpro.demo.angular-aspnetcore)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=devpro.demo.angular-aspnetcore&metric=coverage)](https://sonarcloud.io/dashboard?id=devpro.demo.angular-aspnetcore)
 
 Sample of ASP.NET Core Angular web application.
 
@@ -9,6 +11,5 @@ Sample of ASP.NET Core Angular web application.
 ### Pre-requisites
 
 - git
-- .NET Core 2.2 SDK
+- .NET Core 3.1 SDK
 - NPM
-- Chrome
